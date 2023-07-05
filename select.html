@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display:flex;
+            gap:40px
+        }
+    </style>
+</head>
+<body>
+<main>
+<div class="first">
+    <select id="selection">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JAVASCRIPT">JAVASCRIPT</option>
+    </select>
+</div>
+ <div class="second">
+    <select id="selection1">
+        <option value="RUBY">RUBY</option>
+        <option value="PERL">PERL</option>
+        <option value="JULIA">JULIA</option>
+    </select>
+</div>
+
+    <input type="date" id="dateValue">
+
+</main>
+    
+        <div class="display1"></div>
+        <div class="display2"></div>
+         <div class="result"></div>
+   
+
+    <button onclick="getValue()">Check it</button>
+
+    <script>
+        function getValue(){
+            //first element
+            let element = document.querySelector("#selection");
+            let show = element.value;
+            let display = document.querySelector(".display1")
+            display.innerHTML = ` welcome ${show}`
+            //second element
+            let element1 = document.querySelector("#selection1")
+            let show1 = element1.value
+            let display1 = document.querySelector(".display2")
+            display1.innerHTML = `Goobye ${show1}`
+            
+            //third element
+            let element2 = document.querySelector("#dateValue")
+            show2 = element2.value
+            let output = document.querySelector(".result")
+            output.innerHTML = `
+              <h3>welcome</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Necessitatibux.</p>
+               <input type="time">
+               ${show2}
+
+            `
+        }
+    </script>
+</body>
+</html>

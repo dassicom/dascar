@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+    <title>CAR RENTAL</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-wrapper">
+        <div class="header-container">
+            <div class="nav-container">
+                <!--LOGO-->
+                <div class="logo">
+                    <h2 class="logo-title">das<span class="spanCar">car</span></h2>
+                </div>
+                <!--Navigation links-->
+                <nav>
+                    <img src="timeIcon.png" alt="timeIcon" id="timeIcon">
+                   <a href="home.html">Home</a>
+                   <a href="about.html">About</a>
+                   <a href="testimony.html">Testimonies</a>
+                   <a href="service.html">Vehicles models</a>
+                   <a href="contact.html">Contact</a>
+                   <a href="team.html">Our team</a>
+                </nav>
+                <img src="menuIcon.jpg" alt="menuIcon" id="menuIcon">
+            </div>
+            </div>
+        </div>
+        <!--Header Main section-->
+        <div class="header-main">
+            <div class="header-section">
+                <!--Header section container-->
+                <div class="header-section-container">
+                    <div class="header-section-description">
+                        <h2 class="headerTitle"><span class="carRental">Rent</span> a car now and <br> save big  time with our car rental</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolores sed laboriosam, vel modi officiis cumque. Omnis repudiandae iusto veritatis, enim, commodi magni deserunt ipsum mollitia nobis impedit temporibus delectus!</p>
+                        <button class="headerBtn">Book ride</button>
+                        <button class="learnMore">Learn more</button>
+                    </div>
+                    <img src="car17.png" alt="car" class="carHeader">
+                </div>
+            </div>
+      </div>
+      <!--BOOKING CONTAINER-->
+     <div class="booking-container">
+        <div class="booking-wrapper">
+            <h2 class="bookingTitle">Book a Car</h2>
+            <div class="booking-section">
+                <!--Booking section description-->
+                <div class="booking-section-des">
+                  <div class="label">
+                    <label for="select">Select your car type</label>
+                </div>
+                <select name="car" id="selectCar">
+                    <option value="No car selected">Select your car type</option>
+                    <option value="Audi S-1 line">Audi S-1 line</option>
+                    <option value="Mercedez">Mercedez</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Toyota Delux">Toyota Delux</option>
+                    <option value="Golf">Gofl</option>
+                    <option value="Honda">Honda</option>
+                </select>
+            </div>
+            <div class="booking-section-des">
+              <div class="label">
+                <label for="select">Pick up location</label>
+              </div>
+              <select name="car" id="pickLocation">
+                  <option value="No location selected">Pick up your location</option>
+                  <option value="Douala">Douala</option>
+                  <option value="Yaounde">Yaounde</option>
+                  <option value="Bafoussam">Bafoussam</option>
+              </select>
+          </div>
+          <div class="booking-section-des">
+            <div class="label">
+              <label for="select">Drop off location</label>
+          </div>
+          <select name="car" id="dropLocation">
+              <option value="No location selected">Select drop location</option>
+              <option value="Douala">Douala</option>
+              <option value="Yaounde">Yaounde</option>
+              <option value="Bafoussam">Bafoussam</option>
+          </select>
+      </div>
+      <div class="booking-section-des">
+        <div class="label">
+           <label for="select">Select up a date</label>
+      </div>
+      <div id="car">
+          <input type="date" placeholder="dd/mn/yyy" id="pickUpDate">
+         </div>
+          </div>
+             <div class="booking-section-des">
+              <div class="label">
+               <label for="select">Pick up date</label>
+              </div>
+              <div name="car" id="car">
+          <input type="date" placeholder="dd/mn/yyy" id="dropUpDate">
+      </div>
+  </div>
+  <div class="booking-section-des">
+    <p>Submit here</p>
+      <input type="submit" value="Submit" class="submit" onclick="searchFunc()">
+        </div>
+         </div>
+     </div>
+</header>
+<!--DISPLAY BOOKING-->
+ <div class="display-booking">
+ </div>
+ <div class="cover"></div>
+
+<!--SECTION-->
+<section>
+    <div class="section-wrapper">
+        <div class="section-head">
+         <h4>Plan your trip now</h4>
+         <h2 class="plan">Quick and Easy Car Rental</h2>
+         </div>
+        <div class="section-container">
+            <div class="section-description">
+                 <div class="section-desc-a">
+                    <img src="vehicle2.jpg" alt="" class="image">
+                      <div class="section-text">
+                         <h4>Select a car</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Necessitatibux.</p>
+                      </div>
+                 </div>
+                 <div class="section-desc-a">
+                    <img src="operator.png" alt="" class="image" >
+                      <div class="section-text">
+                         <h4>Contact an Operator</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Necessitatibus .</p>
+                      </div>
+                 </div>
+                 <div class="section-desc-a">
+                    <img src="vehicle1.jpg" alt="" class="image">
+                      <div class="section-text">
+                         <h4>Let's move on</h4>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Necessitatibus.</p>
+                      </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--ARTICLE-->
+<article>
+    <div class="article-wrapper">
+        <div class="article-head">
+            <h4>Vehicles Models</h4>
+            <h2 class="plan">Our Rental Fleet</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit architecto!</p>
+            </div>
+        <div class="article-wrapper">
+            <div class="article-container">
+                <div class="article-description">
+                    <div class="cars-description">
+                        <p class="audix" onclick="audiCar()"><b>Audi S-1 line</b></p>
+                          <p class="mark"onclick="toyotaCar()" ><b>Toyota Delux</b></p>
+                          <p class="mark" onclick="mercedezBenz()"><b>Mercedez</b></p>
+                          <p class="mark" onclick="golfCar()"><b>Golf</b></p>
+                          <p class="mark" onclick="jeepCar()"><b>Jeep</b></p>
+                          <p class="mark" onclick="hondaCar()"><b>Honda</b></p>
+                    </div>
+                     <div class="car-box">
+                        <img src="car19.jpg" alt="" class="carMove">
+                     </div>
+                     <div class="rent-detail">
+                        <table>
+                       <thead>
+                     <tr>
+                         <th> <span class="price">$100</span>/rent per day</th>
+                     </tr>
+             </thead>
+                    <tbody>
+                         <tr>
+                            <td>Model/<span class="model">Audi</span></td>
+                            </tr>
+                            <tr>
+                              <td>Mark/<span class="markis">MB-R3</span></td>
+                                 </tr>
+                                    <tr>
+                                     <td>Year/<span class="year">2017</span></td>
+                                    </tr>
+                                    <tr>
+                                       <td>Transmission/<span class="trans">Automatic</span></td>
+                                    </tr>
+                                      <tr>
+                                        <td>Fuel/<span class="fuel">Gasoline</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>color/<span class="color">Gray</span></td>
+                                    </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                              
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<!--SAVE CARS CONTAINER-->
+<div class="save-wrapper">
+    <div class="save-description">
+        <h2 class="save-head">Save big with our Cheap Car Rental!</h2>
+        <h4 class="small-save">Top Aiports Pick up and car suppliers.<span class="spanSave">24/7</span> Support</h4>
+    </div>
+</div>
+<!--CAR PARK BOX-->
+<div class="car-park">
+    <img src="car18.png" alt="" class="carPark">
+</div>
+   <!--Blogs section-->
+   <div class="blog-showcase">
+   <div class="blog-wrapper">
+    <div class="blog-container">
+        <div class="blog-description">
+            <div class="blog-text">
+                <h4 class="blog-head">Why choose us!</h4>
+                 <h2 class="small-blog">The best valued deals you <br> will ever find</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium animi ab quisquam maiores amet, consequatur harum. Facilis, qui animi architecto laudantium hic dignissimos, atque, iusto odit suscipit dolorem fugiat deserunt?</p>
+                 <a href="service.html" class="blogBtn">Find Details ></a>
+            </div>
+             <div class="blog-text-desc">
+                <div class="blog-a">
+                    <img src="vehicle.jpg" alt="" class="blogImage">
+                    <div class="blog-a-text">
+                        <h4>Cross country drive</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Eaque mollitia!</p>
+                    </div>
+                </div>
+                <div class="blog-a">
+                    <img src="operator.png" alt="" class="blogImage">
+                    <div class="blog-a-text">
+                        <h4>All inclusive pricing</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Eaque mollitia!</p>
+                    </div>
+                </div>
+                <div class="blog-a">
+                    <img src="payment.jpg" alt="" class="blogImage">
+                    <div class="blog-a-text">
+                        <h4>No Hidden charges</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Eaque mollitia!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Testimony section-->
+        <div class="testimony-wrapper">
+            <div class="testimony-head">
+                <h4>Review by people</h4>
+                <h2 class="testi">Clients testimonials</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit!</p>
+                </div>
+                <!--Testiomony container-->
+            <div class="testimony-container">
+                <div class="testimony-description">
+                    <div class="testimony-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo rem molestias hic provident. Sapiente reprehenderit aperiam corrupti nihil vel.</p>
+                          <div class="imagePortrait">
+                            <img src="portrait9.jpg" alt="" class="portrait">
+                              <div class="portDes">
+                               <h5>Ben Johnson</h5>
+                                <p>Douala</p>
+                               </div>
+                         </div>
+                    </div>
+                    <div class="testimony-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo rem molestias hic provident. Sapiente reprehenderit aperiam corrupti nihil vel.</p>
+                         <div class="imagePortrait">
+                         <img src="portrait12.jpg" alt="" class="portrait">
+                           <div class="portDes">
+                              <h5>Marco Lincoln</h5>
+                               <p>Yaounde</p>
+                           </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--QUESTIONS SECTION-->
+        <div class="question-wrapper">
+            <div class="question-head">
+                <h4>We make the different</h4>
+                <h2 class="plan">We are the best car rental and suppliers</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit architecto!</p>
+                </div>
+                <!--QUESTIONS CONTAINER-->
+            <div class="question-container">
+                <div class="question-description">
+                    <div class="question-text">
+                        <h2 class="quest-title">Satisfaction is our goal!!</h2>
+                         <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium repellat quaerat aut voluptas veniam quis dolor, minus voluptates porro at ipsum optio tempora quidem totam accusamus nobis ducimus delectus rerum!</P>
+                           <a href="#" class="questionBtn">Learn more</a>
+                        </div>
+                   <img src="vehicle.jpg" alt="" class="vehicleImage">
+                 </div>
+               </div>
+           </div>
+       </div>
+       <!--download section-->
+       <div class="download-wrapper">
+        <div class="download-container">
+            <div class="download-description">
+                <div class="download-text">
+                    <h2 class="downloadTitle">Download our app to get more of of it</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae modi illum laudantium consequuntur sequi, quidem nemo, est hic inventore numquam in cum similique aliquam sint eveniet. Mollitia consectetur dolores praesentium!</p>
+                      <div class="imageApp">
+                        <img src="googleApp.png" alt="" class="app">
+                        <img src="appStore.png" alt="" class="app">
+                        </div>
+                        </div>
+                        <div class="people">
+                          <img src="peopleIcon.jpg" alt="" class="peopleIcon">
+                     </div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <!--FOOTER-->
+       <footer>
+        <div class="footer-wrapper">
+            <div class="footer-container">
+                <div class="footer-description">
+                    <div class="footer-text">
+                        <h3 class="footer-title">Car rental</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempora quisquam hic?</p>
+                         <p><b>Phone: (+132)764990</b></p>
+                         <p><b>E-mail:dascom@gmail.com</b></p>
+                    </div>
+                    <div class="footer-text">
+                        <h3 class="footer-title">COMPANY</h3>
+                        <p>Douala</p>
+                         <p>Careers</p>
+                         <p>Mobile</p>
+                         <p>Blog</p>
+                         <p>How we work</p>
+                    </div>
+                    <div class="footer-text">
+                        <h3 class="footer-title">WORKING HOURS</h3>
+                        <p>Mon-Fri : 9:00AM - 9:00PM</p>
+                         <p>SAT:9:00AM - 19:00PM</p>
+                         <p>Sun Closed</p>
+                    </div>
+                    <div class="footer-text">
+                        <h3 class="footer-title">SUBSCRIPTION</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                         <p><b>Phone: (+132)764990</b></p>
+                         <p><b>E-mail:dascom@gmail.com</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </footer>
+    </body>
+ </html>

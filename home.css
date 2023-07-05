@@ -1,0 +1,742 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Menu icon and time icon */
+#menuIcon, #timeIcon{
+    mix-blend-mode: multiply;
+    display: none;
+    cursor: pointer;
+}
+
+
+#menuIcon, #timeIcon:hover{
+   background-color:red
+}
+
+#menuIcon{
+    width: 2rem;
+}
+
+#timeIcon{
+    width: 1.3rem;
+    position: relative;
+    left:100px
+}
+
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    padding: 0.3rem;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+nav a:hover{
+    color: red;
+}
+
+.logo-title{
+    text-transform: uppercase;
+}
+
+.spanCar{
+    color:#f67
+}
+
+/* HEADER*/
+header{
+    background-color: whitesmoke;
+    padding-bottom: 80px;
+}
+
+.header-wrapper{
+    background:#777;
+}
+
+.headerTitle{
+    font-size: 30px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+
+.headerBtn, .learnMore{
+    margin-top: 15px;
+    background-color: #333;
+    color:#fff;
+    padding: 13px;
+    border: none;
+}
+
+
+.headerBtn{
+    background: #f67;
+    color: #fff;
+}
+
+.carRental{
+    color:brown;
+}
+
+/*Header Container*/
+.header-container{
+   padding:30px;
+   width:100%;
+   margin: auto;
+   position: fixed;
+   top:0;
+   right:0;
+   background: #777;
+   z-index:1;
+}
+
+.carHeader{
+    width:100%
+}
+/* section description*/
+.header-section-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+   
+}
+
+.header-section{
+    width:90%;
+    margin: auto;
+}
+
+.header-main{
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+.booking-wrapper{
+    margin:auto;
+    width:90%;
+    box-shadow: 2px 3px 2px 3px silver;
+   padding: 40px;
+}
+
+.booking-section{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px
+}
+
+.submit{
+    width:100%;
+    background-color:orange;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+input, select{
+    height: 50px;
+    width:100%;
+}
+/* description section*/
+.section-description{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px
+}
+
+/* wrapper section*/
+
+ .section-wrapper{
+    margin-top:150px;
+    margin-bottom:100px;
+ }
+
+ .section-desc-a{
+    border:1px solid lightgrey;
+    padding: 15px;
+    box-shadow: 6px 3px 6px 3px silver;
+    transition: transform 0.6s;
+ }
+
+ .section-desc-a:hover{
+    transform: translateY(-7px);
+ }
+
+ .section-head{
+    text-align: center;
+    margin: 0 0 50px;
+ }
+
+
+.section-container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.image{
+    width:80px
+}
+
+/* article head*/
+
+.article-head{
+    text-align: center;
+}
+
+.cars-description{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-gap:9px
+}
+
+.audix{
+    background: tomato;
+    color: #fff;
+    padding: 10px;
+    width:250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mark{
+    background:#888;
+    padding: 10px;
+    width:250px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mark:hover{
+    background-color:#f67;
+    color: #fff;
+}
+
+.carMove{
+    width: 100%;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+
+}
+
+td{
+    width: 250px;
+    height: 50px;
+}
+
+th{
+    width: 250px;
+    height: 50px;
+    background-color: tomato;
+    color: #fff;
+}
+
+table, th, td{
+    border: 3px solid silver;
+}
+
+.article-description{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    place-items: center;
+   
+}
+
+.article-container{
+    
+    width:80%;
+    margin: auto;
+}
+
+.article-wrapper{
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+.rent{
+    background: tomato;
+    color: #fff;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid silver;
+}
+
+.save-wrapper{
+    margin-top: 50px;
+    margin-bottom:0;
+}
+
+.save-description{
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 50px;
+}
+
+.save-head{
+    font-size: 45px;
+}
+
+.spanSave{
+    color:orange
+}
+
+.carPark{
+    margin:0 auto;
+    display: block;
+    width: 100%;
+    padding-left:30px;
+    padding-right:30px;
+    background-image: radial-gradient(whitesmoke,whitesmoke);
+}
+
+.blog-description{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:90px
+}
+
+.blog-showcase{
+    background-image: radial-gradient(whitesmoke,lightgrey);
+}
+
+.blog-wrapper{
+  padding:20px ;
+}
+
+.blog-container{
+    width:90%;
+    margin: auto;
+}
+
+.blogBtn{
+    border: none;
+    padding: 15px;
+    background-color: orange;
+    color:#fff;
+    margin:20px 0 0;
+    font-size:15px;
+    text-decoration:none ;
+    position: relative;
+    top:22px
+}
+
+.blogImage{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    mix-blend-mode: multiply;
+    border:3px solid silver;
+   margin-bottom: 25px;
+   background-color: #f67;
+}
+
+
+
+.blog-text-desc{
+    display:grid;
+    grid-gap:20px
+}
+
+.blog-a{
+    display:flex;
+    gap:20px
+}
+/* testimony secction*/
+.testimony-head{
+    padding-top:40px ;
+    padding-right:20px;
+    padding-left:20px ;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.portrait{
+    width:60px;
+    height:60px;
+    border-radius: 50%;
+}
+
+.testimony-wrapper{
+    background-color: whitesmoke;
+
+}
+
+.testimony-container{
+  padding-bottom: 40px;
+}
+
+.testimony-description{
+    display: grid;
+    grid-gap:30px;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    width: 70%;
+}
+
+.testimony-text{
+   background:lavender;
+   padding: 25px;
+}
+
+.imagePortrait{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/*Questions container*/
+
+.question-wrapper{
+    background-image:radial-gradient(pink,wheat);
+    padding-bottom: 40px;
+}
+
+.question-head{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+.question-container{
+    width:70%;
+    margin:auto;
+}
+
+.vehicleImage{
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
+.question-description{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:40px;
+    align-items: center;
+}
+
+.questionBtn{
+    text-decoration: none;
+    background: #888;
+    color:#fff;
+    padding: 10px;
+    position: relative;
+    top:20px;
+}
+
+.app, .peopleIcon{
+    mix-blend-mode: multiply;
+}
+
+.app{
+    max-width:200px;
+    padding: 5px;
+    margin-top: 25px;
+}
+
+.peopleIcon{
+    width: 100%;
+}
+
+.imageApp{
+    display: flex;
+}
+
+.download-container{
+    margin-top: 50px;
+}
+
+.downloadTitle{
+    margin: 0 0 20px;
+}
+
+.download-description{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+    margin: auto;
+    width: 90%;
+    align-items: center;
+}
+
+footer{
+    background: #333;
+    color: #fff;
+    padding:1px;
+}
+
+.footer-container{
+    margin-top: 100px;
+    padding-bottom:90px;
+}
+
+.footer-description{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:30px;
+    margin: auto;
+    width:90%
+}
+
+.titleBooking, .display1{
+    margin-top:20px;
+    margin-bottom:20px ;
+}
+
+.display1{
+    color:lightslategray;
+}
+
+.selectColor{
+    color:lightcoral
+}
+
+.head-container-booking{
+    width:100%;
+    margin:0 auto;
+    background-image: radial-gradient(whitesmoke,wheat);
+    padding:50px;
+    position:absolute;
+    top:690px;
+    box-shadow: 3px 4px 3px 2px silver;
+    z-index:1;
+    line-height: 1.5;
+}
+
+.data1,.data2{
+    text-align: center;
+}
+
+.personalForm{
+    text-align: center;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:15px;
+    width:70%;
+    margin:auto ;
+}
+
+input{
+    padding: 10px;
+}
+
+#submit{
+    font-size:25px;
+    background: #333;
+    color: #fff;
+}
+
+.icon{
+    mix-blend-mode: multiply;
+    cursor: pointer;
+    width:20px;
+    position: absolute;
+    top:0;
+    right:15px;
+    margin:25px;
+    height: 20px;
+    border-radius: 50%;
+    border-color: #000;
+}
+
+
+
+.main-location{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:30px;
+    place-items: center;
+}
+
+
+
+#time{
+    width:200px;
+    height: 30px;
+    font-size:20px;
+    text-align: center;
+}
+
+/*MediaQueries*/
+@media(max-width:890px){
+
+    #menuIcon, #timeIcon{
+       display: block;
+    }
+
+    
+
+    #timeIcon{
+        position: relative;
+        top:30px;
+    }
+
+
+    nav{
+
+    display:flex;
+    gap:10px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top:0.1px;
+    width:100%;
+    background:whitesmoke;
+    left: -880px;
+    z-index: 1;
+    transition: left 0.9s;
+    padding-bottom: 100px;
+}
+
+nav a{
+    position: relative;
+    top: 40px;
+    margin:5px;
+}
+
+.header-section{
+    text-align: center;
+}
+
+.section-head{
+    padding-left:25px;
+    padding-right:25px ;
+}
+
+    
+.header-section-container{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-gap:30px
+}
+
+.booking-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.section-description{
+    display:grid;
+    grid-template-columns:1fr;
+    
+}
+
+.article-description{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.carPark{
+    padding-left:30px;
+    padding-right:30px;
+}
+.blog-description{
+    display: grid;
+    grid-template-columns:1fr;
+
+}
+
+.blog-a{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blog-text{
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog-a-text{
+    position: relative;
+    top:-30px ;
+}
+
+.testimony-description{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.question-description{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+
+.question-head{
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.article-head{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.download-description{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.imageApp{
+    margin: auto;
+    display:block
+}
+
+.download-text{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-description{
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.main-location{
+    display: grid;
+    grid-template-columns:1fr;
+   
+}
+
+}
+
+@media(max-width:600px){
+    .booking-section{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
